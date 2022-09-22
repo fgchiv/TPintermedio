@@ -17,8 +17,9 @@ class Lector(models.Model):
 
 class Ideas(models.Model):
     tema = models.CharField(max_length=30)
-    autor = Editor()
+    autor = models.CharField(max_length=30)
     texto = models.CharField(max_length=280)
     cantVals = models.IntegerField(default=0)
     puntos = models.IntegerField(default=0)
     datetimePubl = models.DateTimeField()
+    

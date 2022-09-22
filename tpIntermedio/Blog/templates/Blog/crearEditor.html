@@ -1,0 +1,22 @@
+{% extends "Blog/base.html" %}
+{% load static %}
+
+{% block titulo %}
+Nuevo editor
+{% endblock %}
+
+{% block subtitulo %}
+Desde esta página puede registrarse como Editor.
+{% endblock %}
+
+{% block contenido %}
+{% if formEditor.errors %}
+<p>Error. Revisar los datos.</p>
+{% endif %}
+<form action="" method="POST"> {% csrf_token %}
+    <table>
+        {{formEditor.as_table}}
+    </table>
+    <input type="submit", value="Enviar">
+</form>
+{% endblock %}

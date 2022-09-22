@@ -1,0 +1,22 @@
+{% extends "Blog/base.html" %}
+{% load static %}
+
+{% block titulo %}
+Pensar idea.
+{% endblock %}
+
+{% block subtitulo %}
+Desde esta página puede publicar una nueva idea.
+{% endblock %}
+
+{% block contenido %}
+{% if formIdea.errors %}
+<p>Error. Revisar los datos.</p>
+{% endif %}
+<form action="" method="POST"> {% csrf_token %}
+    <table>
+        {{formIdea.as_table}}
+    </table>
+    <input type="submit", value="Enviar">
+</form>
+{% endblock %}

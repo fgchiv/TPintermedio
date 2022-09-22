@@ -1,0 +1,18 @@
+{% extends "Blog/base.html" %}
+{% load static %}
+
+{% block titulo %}
+    Buscar en ideas.
+{% endblock %}
+
+{% block subtitulo %}
+    Desde esta página puede buscar las ideas publicadas.
+{% endblock %}
+
+{% block contenido %}
+    <form action="/resultadosIdea/" method="GET">
+        <input type="text" name="termino" id="termino">
+        <input type="submit" value="Buscar">
+    </form>
+    <p>Está buscando ideas que contengan la palabra {{termino}}.</p>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "Blog/base.html" %}
+{% load static %}
+
+{% block titulo %}
+    Buscar en ideas
+{% endblock %}
+
+{% block subtitulo %}
+    La búsqueda de la palabra {{termino}} arrojó los siguientes resultados:
+{% endblock %}
+
+{% block contenido %}
+       {% for cosa in ideas %}
+        <ul>
+            <li>{{cosa.texto}} (tema: {{cosa.tema}})</li>
+        </ul>
+        {% endfor %}
+{% endblock %}
