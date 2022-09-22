@@ -4,7 +4,7 @@ La que le da un poco de sentido al proyecto más allá de resolver el TP es ser 
 Por lo demás:
   - /crearEditor/ es la página para crear un nuevo Editor
   - /crearLector/ es la página que permite crear un nuevo Lector
-  . /pensarIdea/ es la página que permite crear un nuevo objeto clase idea (en honor a Twitter tienen un límite de extensión de 280 caracteres)
+  - /pensarIdea/ es la página que permite crear un nuevo objeto clase idea (en honor a Twitter tienen un límite de extensión de 280 caracteres)
   - /buscarenIdea/ realiza una búsqueda en el texto de las ideas y devuelve las ideas.texto e ideas.tema
   
 Me hubiera gustado mandarlo un poco más completo (y con la base de datos un poco más llena), pero no lo quiero dedicar más tiempo a un trabajo intermedio.
